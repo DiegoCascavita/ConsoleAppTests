@@ -1,2 +1,20 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿namespace Classes
+{ 
+    public class Person
+    {
+        public string? Name;
+        public void Introduce(string to)
+        {
+            Console.WriteLine("Hi {0}, I am {1}", to, Name);
+        }
+    }
+    class Program        
+    {
+        static void Main(string[] args)
+        {
+            var person = new Person();
+            person.Name = "Jhon";
+            person.Introduce("Mclein");
+        }
+    }
+}
